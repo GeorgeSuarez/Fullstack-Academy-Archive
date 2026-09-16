@@ -1,6 +1,6 @@
 # Fullstack Academy Archive
 
-Consolidates Fullstack Academy workshop repos as submodules, so the individual repos can be reviewed in one place.
+Full copies of Fullstack Academy workshop repos, consolidated so the originals can be safely deleted.
 
 ## Repos
 
@@ -14,15 +14,4 @@ Consolidates Fullstack Academy workshop repos as submodules, so the individual r
 - Unit3.PuppyBowlReact
 - Unit2.FreelancerForum
 
-## Clone
-
-```bash
-git clone --recurse-submodules <this-repo-url>
-```
-
-## Add a new workshop
-
-```bash
-git submodule add https://github.com/GeorgeSuarez/<Repo>.git <Repo>
-git commit -m "Add <Repo> as submodule"
-```
+Each folder is a complete standalone copy (history not preserved — see original repo for history before deletion).

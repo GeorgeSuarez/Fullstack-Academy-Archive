@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sign-up-msg {
+  color: aqua;
+  font-size: 3em;
+}
+
+.submit-btn {
+  margin-top: 2em;
+}
+
+.logged-in-msg {
+  color: yellow;
+}
+
+.authenticate-btn {
+  color: green;
+}
