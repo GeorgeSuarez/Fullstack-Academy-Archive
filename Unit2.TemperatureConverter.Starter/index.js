@@ -6,7 +6,7 @@
  * @returns {number} the number of degrees C
  */
 function convertToCelsius(fahren) {
-  let fahrenInt = parseInt(fahren);
+  const fahrenInt = parseInt(fahren);
   return (fahrenInt - 32) * 5 / 9;
 }
 

@@ -20,5 +20,7 @@ Full copies of Fullstack Academy workshop repos, consolidated so the originals c
 - Unit2.Shapes.Starter
 - Unit2.Numbers.Starter
 - Unit2.GroceryList.Starter
+- Unit2.Stats.Starter
+- Unit2.TemperatureConverter.Starter
 
 Each folder is a complete standalone copy (history not preserved — see original repo for history before deletion).
