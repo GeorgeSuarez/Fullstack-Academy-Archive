@@ -1,0 +1,27 @@
+[submodule "Unit3.ContactList"]
+	path = Unit3.ContactList
+	url = https://github.com/GeorgeSuarez/Unit3.ContactList.git
+[submodule "Unit2.Froyo"]
+	path = Unit2.Froyo
+	url = https://github.com/GeorgeSuarez/Unit2.Froyo.git
+[submodule "Unit3.ColorPicker.Starter"]
+	path = Unit3.ColorPicker.Starter
+	url = https://github.com/GeorgeSuarez/Unit3.ColorPicker.Starter.git
+[submodule "Unit3.PuppyPals"]
+	path = Unit3.PuppyPals
+	url = https://github.com/GeorgeSuarez/Unit3.PuppyPals.git
+[submodule "Unit3.ReactForms"]
+	path = Unit3.ReactForms
+	url = https://github.com/GeorgeSuarez/Unit3.ReactForms.git
+[submodule "Unit3.ReactRouter"]
+	path = Unit3.ReactRouter
+	url = https://github.com/GeorgeSuarez/Unit3.ReactRouter.git
+[submodule "Unit2.PartyPlanner"]
+	path = Unit2.PartyPlanner
+	url = https://github.com/GeorgeSuarez/Unit2.PartyPlanner.git
+[submodule "Unit3.PuppyBowlReact"]
+	path = Unit3.PuppyBowlReact
+	url = https://github.com/GeorgeSuarez/Unit3.PuppyBowlReact.git
+[submodule "Unit2.FreelancerForum"]
+	path = Unit2.FreelancerForum
+	url = https://github.com/GeorgeSuarez/Unit2.FreelancerForum.git
