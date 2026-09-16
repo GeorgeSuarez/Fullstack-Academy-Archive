@@ -85,7 +85,7 @@ h1 {
 }
 
 .login-container {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2em;

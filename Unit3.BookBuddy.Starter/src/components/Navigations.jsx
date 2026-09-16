@@ -9,5 +9,5 @@ export default function Navigations() {
             <Link to="/login">Login</Link>
             <Link to="/account">Account</Link>
         </div>
-    )
+    );
 }

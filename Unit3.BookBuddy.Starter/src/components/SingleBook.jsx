@@ -13,7 +13,7 @@ export default function SingleBook() {
                     `https://fsa-book-buddy-b6e748d1380d.herokuapp.com/api/books/${bookId}`,
                     {
                         headers: { "Content-Type": "application/json" },
-                    }
+                    },
                 );
 
                 const result = await response.json();
@@ -32,7 +32,8 @@ export default function SingleBook() {
         <div className="single-book-container">
             <h2>Book Details</h2>
             <p>
-                <span>ID: </span>{book.id}
+                <span>ID: </span>
+                {book.id}
             </p>
             <p>Title: {book.title}</p>
             <p>Author: {book.author}</p>

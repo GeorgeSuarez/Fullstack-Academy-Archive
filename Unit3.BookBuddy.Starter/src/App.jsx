@@ -21,10 +21,16 @@ function App() {
                 <Navigations />
                 <Routes>
                     <Route path="/books" element={<Books />} />
-                    <Route path="/books/:id" element={<SingleBook />}/>
+                    <Route path="/books/:id" element={<SingleBook />} />
                     <Route path="/register" element={<Register />} />
-                    <Route path="/login" element={<Login setToken={setToken} />} />
-                    <Route path="/account" element={<Account token={token} />} />
+                    <Route
+                        path="/login"
+                        element={<Login setToken={setToken} />}
+                    />
+                    <Route
+                        path="/account"
+                        element={<Account token={token} />}
+                    />
                 </Routes>
             </div>
         </>

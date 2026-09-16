@@ -12,18 +12,19 @@ export default function Login({ setToken }) {
                 return;
             }
 
-            const response = await fetch(`https://fsa-book-buddy-b6e748d1380d.herokuapp.com/api/users/login`,
-            {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email, password }),
-            });
+            const response = await fetch(
+                `https://fsa-book-buddy-b6e748d1380d.herokuapp.com/api/users/login`,
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email, password }),
+                },
+            );
 
             const result = await response.json();
             setToken(result.token);
             console.log(result);
             return result;
-            
         } catch (error) {
             console.error("Login failed: ", error.message);
         }
@@ -32,14 +33,14 @@ export default function Login({ setToken }) {
     return (
         <div className="login-container">
             <h2>Login</h2>
-            <input 
+            <input
                 placeholder="Email"
                 type="email"
-                value={email} 
+                value={email}
                 onChange={(e) => setEmail(e.target.value)}
             />
-            <input 
-                placeholder="Password" 
+            <input
+                placeholder="Password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -47,5 +48,5 @@ export default function Login({ setToken }) {
             <button onClick={handleLogin}>Login</button>
             {/* {token && <p>User token: {token}</p>} */}
         </div>
-    )
+    );
 }

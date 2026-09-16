@@ -11,7 +11,7 @@ export default function Books() {
                     "https://fsa-book-buddy-b6e748d1380d.herokuapp.com/api/books",
                     {
                         headers: { "Content-Type": "application/json" },
-                    }
+                    },
                 );
                 const result = await response.json();
                 console.log(result);
@@ -28,15 +28,19 @@ export default function Books() {
             <h2 id="catalog-header">Library Catalog</h2>
             <ul id="library-catalog">
                 {books.map((book) => {
-                    return((
-                        <li key={book.id} className="book-item">{book.title}
-                            <Link to={`/books/${book.id}`} className="details-link">
+                    return (
+                        <li key={book.id} className="book-item">
+                            {book.title}
+                            <Link
+                                to={`/books/${book.id}`}
+                                className="details-link"
+                            >
                                 See Details
                             </Link>
                         </li>
-                    ))
+                    );
                 })}
             </ul>
         </div>
-    )
+    );
 }

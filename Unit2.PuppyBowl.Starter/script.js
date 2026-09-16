@@ -54,7 +54,7 @@ const addNewPlayer = async (playerObj) => {
     } catch (err) {
         console.error(
             "Oops, something went wrong with adding that player!",
-            err
+            err,
         );
     }
 };
@@ -65,13 +65,13 @@ const removePlayer = async (playerId) => {
             method: "DELETE",
         });
         state.players = state.players.filter(
-            (player) => player.id !== playerId
+            (player) => player.id !== playerId,
         );
         renderAllPlayers(state.players);
     } catch (err) {
         console.error(
             `Whoops, trouble removing player #${playerId} from the roster!`,
-            err
+            err,
         );
     }
 };
@@ -125,8 +125,10 @@ const renderAllPlayers = (playerList) => {
             seeDetailsButton.textContent = "See Details";
             seeDetailsButton.addEventListener("click", async () => {
                 //await fetchSinglePlayer(player.id);
-                const div = document.querySelectorAll(`.player-id-${player.id} > p`);
-                div.forEach(item => {
+                const div = document.querySelectorAll(
+                    `.player-id-${player.id} > p`,
+                );
+                div.forEach((item) => {
                     item.toggleAttribute("Hidden");
                 });
                 if (seeDetailsButton.textContent === "See Details") {
@@ -209,7 +211,7 @@ const renderNewPlayerForm = () => {
             breedInput,
             statusInput,
             teamInput,
-            addPlayerButton
+            addPlayerButton,
         );
 
         newPlayerFormContainer.appendChild(form);

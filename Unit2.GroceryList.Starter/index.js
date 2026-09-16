@@ -29,8 +29,8 @@ function logItemNames() {
     //TODO: use the .forEach() method to log out the name of each item
     items.forEach((element) =>
         console.log(
-            `id: ${element.id} name: ${element.name} price: ${element.price} categoryId: ${element.categoryId} inventory: ${element.inventory}`
-        )
+            `id: ${element.id} name: ${element.name} price: ${element.price} categoryId: ${element.categoryId} inventory: ${element.inventory}`,
+        ),
     );
 }
 
@@ -66,7 +66,7 @@ function calculateTotalInventory() {
     return items.reduce(
         (accumulator, currentInventoryCount) =>
             accumulator + currentInventoryCount.inventory,
-        totalInventory
+        totalInventory,
     );
 }
 
@@ -79,7 +79,7 @@ function calculateAllInventoryPrice() {
     return items.reduce(
         (accumulator, currentPrice) =>
             accumulator + currentPrice.price * currentPrice.inventory,
-        initialInventoryPrice
+        initialInventoryPrice,
     );
 }
 
@@ -121,7 +121,7 @@ function calculateTotalCartPrice() {
     const initialTotalPrice = 0;
     return items.reduce(
         (accumulator, currentPrice) => accumulator + currentPrice.price,
-        initialTotalPrice
+        initialTotalPrice,
     );
 }
 
@@ -129,7 +129,7 @@ function calculateTotalCartPrice() {
 
 const ids = prompt(
     "enter numbers separated by commas for the ids of the items you want to add to your cart",
-    "1, 3, 5"
+    "1, 3, 5",
 );
 // Split the string of numbers into an array of strings.
 const idArr = ids.split(", ");
@@ -142,35 +142,35 @@ console.log(
     `The item with id ${itemId} is  ${JSON.stringify(
         findItemById(+itemId),
         null,
-        2
-    )}`
+        2,
+    )}`,
 );
 console.log(
     "We can map over an array and return a new array with the names capitalized like so: ",
-    capitalizeNames()
+    capitalizeNames(),
 );
 console.log(
     "The total inventory of all grocery items is: ",
-    calculateTotalInventory()
+    calculateTotalInventory(),
 );
 console.log(
     "The total price of all items in inventory is: ",
-    calculateAllInventoryPrice()
+    calculateAllInventoryPrice(),
 );
 
 const itemToFind = prompt(
     "Enter the name of an item to find the price of",
-    "apple"
+    "apple",
 );
 console.log(`The price of ${itemToFind} is: `, getItemPriceByName(itemToFind));
 
 const categoryId = prompt(
     "Enter a number between 1-4 to filter only items with that categoryId",
-    2
+    2,
 );
 console.log(
     `The items in category ${categoryId} are: `,
-    filterItemsByCategoryId(+categoryId)
+    filterItemsByCategoryId(+categoryId),
 );
 
 console.log("Cart items: ");
@@ -178,5 +178,5 @@ logCartItems();
 
 console.log(
     `The total price of the items in your cart is: `,
-    calculateTotalCartPrice()
+    calculateTotalCartPrice(),
 );
