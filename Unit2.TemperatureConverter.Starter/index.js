@@ -6,8 +6,8 @@
  * @returns {number} the number of degrees C
  */
 function convertToCelsius(fahren) {
-  const fahrenInt = parseInt(fahren);
-  return (fahrenInt - 32) * 5 / 9;
+ const fahrenInt = parseInt(fahren);
+ return ((fahrenInt - 32) * 5) / 9;
 }
 
 /**
@@ -26,15 +26,15 @@ function convertToCelsius(fahren) {
  * @param {number} celc
  */
 function createMessage(fahren, celc) {
-  if (fahren <= 32) {
-    return `temperature is ${fahren}°F and ${celc}°C and feels very cold`;
-  } else if (fahren <= 64) {
-    return `temperature is ${fahren}°F and ${celc}°C and feels cold`;
-  } else if (fahren <= 86) {
-    return `temperature is ${fahren}°F and ${celc}°C and feels warm`;
-  } else if (fahren >= 100) {
-    return `temperature is ${fahren}°F and ${celc}°C and feels hot`;
-  }
+ if (fahren <= 32) {
+  return `temperature is ${fahren}°F and ${celc}°C and feels very cold`;
+ } else if (fahren <= 64) {
+  return `temperature is ${fahren}°F and ${celc}°C and feels cold`;
+ } else if (fahren <= 86) {
+  return `temperature is ${fahren}°F and ${celc}°C and feels warm`;
+ } else if (fahren >= 100) {
+  return `temperature is ${fahren}°F and ${celc}°C and feels hot`;
+ }
 }
 
 /**
@@ -43,20 +43,20 @@ function createMessage(fahren, celc) {
  * @returns {number} a number between 0 and the int passed in
  */
 function rand(limit) {
-  return Math.round(Math.random() * limit);
+ return Math.round(Math.random() * limit);
 }
 
 // -------------------- DONT NOT CHANGE THE CODE BELOW ---------------------- //
 
 let fahren = prompt(
-  "enter a number, we will convert that number from fahrenheit to celcius"
+ "enter a number, we will convert that number from fahrenheit to celcius",
 );
 let celc = convertToCelsius(fahren);
 let output = createMessage(fahren, celc);
 console.log(output);
 
 fahren = prompt(
-  "Lets try that again. enter a number, we will convert that number from fahrenheit to celcius"
+ "Lets try that again. enter a number, we will convert that number from fahrenheit to celcius",
 );
 celc = convertToCelsius(fahren);
 output = createMessage(fahren, celc);
